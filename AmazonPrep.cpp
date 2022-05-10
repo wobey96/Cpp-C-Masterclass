@@ -6,6 +6,9 @@
 #include <array>
 #include <unordered_map>
 
+
+// 0x1|0x2|nullptr|0x3|0x4|0x5| |
+
 int main()
 {
     const int myFillNum = 27;
@@ -42,6 +45,8 @@ int main()
         std::cout << " key " << i.first << std::endl; 
         std::cout << " value " << i.second << std::endl; 
     }
+
+    std::cout << " Map Value " << myMap.at(3);
 
     std::endl (std::cout); 
 
