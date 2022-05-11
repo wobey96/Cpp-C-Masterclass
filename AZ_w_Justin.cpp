@@ -9,7 +9,19 @@
 #include <unordered_map>
 
 // distance calculation function 
+double calcDist(int X_2, int Y_2)
+{
 
+    //  sqrt( (X_2 - X_1)^2  + (Y_2 - Y_1)^2 )
+
+    int X_1 = 0; 
+    int Y_1 = 0; 
+    double X_calc = pow(X_2 - X_1, 2); 
+    double Y_calc = pow(Y_2 - Y_1, 2);
+    double finalCalc = sqrt( X_calc + Y_calc);  
+
+
+}
 // 
 
 std::vector<std::vector<int>> returnDistance(std::vector<std::vector<int>> allLocations, int numRestaurants)
