@@ -8,6 +8,11 @@
 #include <utility>
 
 
+std::vector<std::vector<int>> returnVector
+{
+    std::vector<std::vector<int>> myVector{}
+}
+
 int main()
 {
     std::array<std::array<int,3>, 3> myMatrix = { { {1,2,3},

@@ -1,4 +1,6 @@
 #include <iostream>
+#include <queue>
+#include <functional>
 #include <string> 
 #include <cmath>
 #include <algorithm>
