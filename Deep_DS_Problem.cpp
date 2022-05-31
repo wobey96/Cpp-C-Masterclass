@@ -24,6 +24,13 @@ class myComp
     {
         return a.second > b.second;
     }
+    /*
+    This also works if you dont wanna do constexpr: 
+    bool operator(same parameters as above)
+    {
+        return a.second > b.second; 
+    } 
+    */
 };
 
 // Helper function for Calculating the distance of each location

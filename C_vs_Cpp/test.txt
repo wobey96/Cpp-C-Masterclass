@@ -1,0 +1,86 @@
+
+my_program.c or cpp 
+g++ my_program -o my_program
+./my_program 
+
+// you can tell gcc which step to run of you wanna do something intermediatly - 
+
+
+
+
+preprocessor
+    |
+compiler
+    |
+Assembler
+    |
+Linker (Dynamic and Static)
+    |
+Executable (elf file format of Executable or whatever exe format)
+
+
+
+Registures
+    |
+Cache Memory on L1, L2, L3 Cache
+    |AM
+Main Memory - R
+    |
+Secondary Memory - Hard Drvies/Flash/SD Card etc
+
+
+
+
+
+
+cpu reg a lot : |0x1|1-bit| | | | | | | | | | | | (32 bit reg) - hold 1 value 
+                |0x1| | | | | | | | | | | |0x20| (32 bit reg) - hold stack_pointer 
+                |0x1| | | | | | | | | | | |0x20| (32 bit reg)
+                |0x1| | | | | | | | | | | |0x20| (32 bit reg)
+                |0x1| | | | | | | | | | | |0x20| (32 bit reg)
+                |
+                |
+                |
+                32 of them 
+
+Reviewed Compilation stuff and memory model of C program 
+
+Next Session: 
+program counter 
+Pipe Line Stuff from Comp Org/Arch Questions
+
+
+
+Basic Pipeline Stage
+program counter increment 
+Fetch - gets instruction 
+Decode - what type of instruction
+Execute - does the instruction 
+Memory - check if we need a memory step (get more memory or not)----
+       - Note all instructions have a implicit memeory step
+Writeback
+
+Pipeline Optimizations (List below) 
+
+cache coherency / consistency 
+
+--> GPU stuff into it. vector stuff SIMD, MIMD, ETC ECT 
+
+OS Stuff and how it ties in to all this. -- talk about memory management unit etc etc 
+
+"talk about how Secondary Memory is incorporated into it"
+
+examples of undefined behavior
+
+If each program has it's own stack and heap memory. Is this size determined at run time or compiled time? 
+I'm guessing it's determined at run time since it can grow? 
+
+
+OS Stuff:
+    Virtualization
+    Concurency
+    Presistance 
+    Security -- Won't reallty get into this 
+
+
+    
