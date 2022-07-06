@@ -1,4 +1,4 @@
-//#include <stdio.h>
+#include <stdio.h>
 
 
 
@@ -7,6 +7,7 @@
 int main()
 {
     // size Stack |myArr[0]|myArr[1]|myArr[2]| | | | | | |...| | 
+    printf("Hello World\n"); 
     int myArr[3];
     myArr[0] = 1;
     myArr[1] = 1;
