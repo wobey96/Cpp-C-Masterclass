@@ -1,16 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 
 int main(int argc, char const *argv[])
 {
-    u_int32_t myNumber = 0xFF; 
-    u_int32_t bitPosition = 2; 
+    /*
+  char Src[15]= "educative";
+  char Dest[15] = "";
+  printf("Before copying\n");
+  printf("Source string: %s \n", Src);
+  printf("Destination string: %s \n\n", Dest);
+  
+  strcpy(Dest, Src);   // calling strcpy function
+  printf("After copying\n");
+  printf("Source string: %s \n", Src);
+  printf("Destination string: %s \n", Dest);
+    */
 
-    printf("bit = 0x%d myNumber = 0x%02x\n\r", bitPosition, myNumber); 
-    myNumber = myNumber & ~(1<< bitPosition);
-    printf("bit cleared = 0x%02x\n\r", myNumber); 
-    return 0;
+   char name[] = "Wallace"; 
+   printf("My name is %s \n", name); 
+
+   printf("Renaming my name\n"); 
+   scanf("%s", name);
+
+   printf("My new name %s\n", name);
+  return 0;
 }
 
 
