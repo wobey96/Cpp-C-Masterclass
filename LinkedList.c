@@ -90,7 +90,7 @@ void traverseList(struct Node** HeadRef)
 }
 
 
-int main()
+int main(int argc, char* argv[])
 {
     struct Node* head = NULL;
     struct Node* second = NULL;
