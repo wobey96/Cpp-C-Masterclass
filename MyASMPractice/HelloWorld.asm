@@ -1,4 +1,5 @@
-#AARCH64 Assembly Hello World 
+# AARCH64 Assembly Hello World 
+# Reference for AARCH64 functions: https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md#arm64-64_bit
 
 .global _start
 .section .text
@@ -11,7 +12,7 @@ _start:
     ldr x1, =message 
     mov x2, #13 
     svc 0 
-
+    
     # exit system call (system call 95): This is how you exit we need help from the kernel 
     mov x8, #0x5d
     mov x0, #0x41
