@@ -50,6 +50,7 @@ class Person
 
     Person(const Person& inP1)
     {
+        cout << " Copy Constructor Called \n"; 
         buffer = NULL; 
         if(inP1.buffer != NULL)
         {
